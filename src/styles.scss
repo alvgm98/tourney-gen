@@ -2,9 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  font-size: 18px;
+}
+
 * {
-  font-family: "Raleway", sans-serif;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: $primary-color-900;
 }
 
 html, body {

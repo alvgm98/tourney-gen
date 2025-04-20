@@ -1,10 +1,26 @@
-<h1>Genera Ligas y Eliminatorias para tus torneos</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur itaque nobis quisquam repellat esse officia rem,
-  consequatur amet magnam distinctio voluptas nostrum explicabo alias asperiores laudantium voluptatum rerum debitis
-  quaerat?</p>
+<h1>Genera Ligas y Eliminatorias para tus Torneos</h1>
+<p>Crea fácilmente diferentes formatos de competición para tus eventos deportivos. Simplemente elige el formato, ingresa
+  los equipos y ¡listo! Obtén calendarios profesionales en segundos.</p>
 
-<div id="main-menu">
-  <button>Liga</button>
-  <button>Torneo Eliminatorias</button>
-  <button>Torneo Suizo</button>
+<div id="main-nav">
+  <nav-card
+    [icon]="icons[0]"
+    [title]="'Liga'"
+    [body]="'Formato de todos contra todos donde cada equipo se enfrenta a los demás. Ideal para temporadas regulares.'"
+  />
+  <nav-card
+    [icon]="icons[1]"
+    [title]="'Torneo Clasico'"
+    [body]="'Eliminación directa en formato de bracket. Perfecto para playoffs y competiciones de copa.'"
+  />
+  <nav-card
+    [icon]="icons[2]"
+    [title]="'Torneo Suizo'"
+    [body]="'Sistema donde los equipos se enfrentan a rivales con puntuación similar. Ideal para ajedrez y juegos de mesa.'"
+  />
+  <nav-card
+    [icon]="icons[3]"
+    [title]="'Torneo con Fase de Grupos'"
+    [body]="'Fase de grupos seguida de eliminatorias. Formato usado en mundiales y competiciones internacionales.'"
+  />
 </div>

@@ -1,12 +1,15 @@
 @use '../../../styles/colors' as *;
 
 header {
-  background-color: $black;
-  color: $white;
+  background-color: $primary-color-900;
   display: flex;
   justify-content: center;
 
   img {
     width: 40px;
+  }
+
+  h2 {
+    color: $white;
   }
 }
