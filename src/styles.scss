@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'styles/colors' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+  font-family: 'Inter', sans-serif;
+}
