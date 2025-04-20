@@ -1,6 +1,11 @@
-:host {
+@use '../../../styles/colors' as *;
 
+:host {
   padding: 20px 40px;
+
+  .logo {
+    color: $primary-color-900;
+  }
 
   h1 {
     font-size: 2rem;
@@ -25,5 +30,11 @@
     #main-nav {
       grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+@media (width > 1024px) {
+  :host {
+    padding: 40px 80px;
   }
 }
