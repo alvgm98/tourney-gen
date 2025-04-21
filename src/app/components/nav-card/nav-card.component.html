@@ -3,4 +3,4 @@
 </div>
 <h3>{{ title() }}</h3>
 <p>{{ body() }}</p>
-<button [routerLink]="url()">Crear {{ title() }}</button>
+<slide-button [routerLink]="url()" [label]="title()" [icon]="btnIcon()" [style]="'primary'" />

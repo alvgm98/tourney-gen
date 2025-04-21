@@ -1,0 +1,52 @@
+@use '../../../styles/colors' as *;
+
+:host button {
+  height: 35px;
+  border: 0;
+  border-radius: 8px;
+  outline: 0;
+  padding-inline: 20px;
+
+  font-weight: 500;
+  color: $white;
+
+  overflow: hidden;
+
+  transition: 300ms;
+
+  &:hover {
+    cursor: pointer;
+
+    .slider {
+      transform: translateY(-40%);
+    }
+  }
+
+  .slider {
+    transform: translateY(15%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    transition: 300ms;
+  }
+}
+
+/* El estilo del boton se elige mediante prompt */
+:host .primary {
+  background-color: $primary-color-800;
+
+  &:hover {
+    background-color: $primary-color-900;
+  }
+}
+
+:host .secondary {
+  background-color: $secondary-color-800;
+
+  &:hover {
+    background-color: $secondary-color-900;
+  }
+}
