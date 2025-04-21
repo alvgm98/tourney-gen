@@ -1,38 +1,63 @@
-<h1>Genera Ligas y Eliminatorias para tus Torneos</h1>
-<p>Crea fácilmente diferentes formatos de competición para tus eventos deportivos. Simplemente elige el formato, ingresa
-  los equipos y ¡listo! Obtén calendarios profesionales en segundos.</p>
+<section id="hero">
+  <h1>Genera Ligas y Eliminatorias para tus Torneos</h1>
+  <p>Crea fácilmente diferentes formatos de competición para tus eventos deportivos. Simplemente elige el formato, ingresa
+    los equipos y ¡listo! Obtén calendarios profesionales en segundos.</p>
+</section>
 
-<div id="main-nav">
-  <nav-card
-    [icon]="icons[0]"
-    [btnIcon]="icons[4]"
-    [title]="'Liga'"
+<section id="main-nav">
+  <nav-card [icon]="icons[0]" [btnIcon]="icons[4]" [title]="'Liga'"
     [body]="'Formato de todos contra todos donde cada equipo se enfrenta a los demás. Ideal para temporadas regulares.'"
-    [url]="'league'"
-  />
-  <nav-card
-    [icon]="icons[1]"
-    [btnIcon]="icons[4]"
-    [title]="'Torneo Clasico'"
+    [url]="'league'" />
+  <nav-card [icon]="icons[1]" [btnIcon]="icons[4]" [title]="'Torneo Clasico'"
     [body]="'Eliminación directa en formato de bracket. Perfecto para playoffs y competiciones de copa.'"
-    [url]="'classic'"
-  />
-  <nav-card
-    [icon]="icons[2]"
-    [btnIcon]="icons[4]"
-    [title]="'Torneo Suizo'"
+    [url]="'classic'" />
+  <nav-card [icon]="icons[2]" [btnIcon]="icons[4]" [title]="'Torneo Suizo'"
     [body]="'Sistema donde los equipos se enfrentan a rivales con puntuación similar. Ideal para ajedrez y juegos de mesa.'"
-    [url]="'swiss'"
-  />
-  <nav-card
-    [icon]="icons[3]"
-    [btnIcon]="icons[4]"
-    [title]="'Torneo con Fase de Grupos'"
+    [url]="'swiss'" />
+  <nav-card [icon]="icons[3]" [btnIcon]="icons[4]" [title]="'Torneo con Fase de Grupos'"
     [body]="'Fase de grupos seguida de eliminatorias. Formato usado en mundiales y competiciones internacionales.'"
-    [url]="'group'"
-  />
-</div>
+    [url]="'group'" />
+</section>
 
-<div id="import-tourney">
+<section id="import-tourney">
   <import-card />
-</div>
+</section>
+
+<section id="how-it-works">
+  <div class="section-header">
+    <h2 class="section-title">¿Cómo funciona?</h2>
+    <p class="section-description">Organizar tu competición nunca fue tan fácil</p>
+  </div>
+
+  <div class="steps-container">
+    <div class="step-card">
+      <div class="step-number">
+        <span>1</span>
+      </div>
+      <h3 class="step-title">Elige el formato</h3>
+      <p class="step-description">
+        Selecciona el tipo de competición que mejor se adapte a tus necesidades.
+      </p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-number">
+        <span>2</span>
+      </div>
+      <h3 class="step-title">Ingresa los equipos</h3>
+      <p class="step-description">
+        Añade los nombres de los participantes o equipos que competirán.
+      </p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-number">
+        <span>3</span>
+      </div>
+      <h3 class="step-title">¡Listo!</h3>
+      <p class="step-description">
+        Obtén tu calendario de competición generado automáticamente.
+      </p>
+    </div>
+  </div>
+</section>

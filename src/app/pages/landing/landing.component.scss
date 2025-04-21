@@ -1,23 +1,25 @@
 @use '../../../styles/colors' as *;
 
 :host {
-  padding: 20px 40px;
+  padding-block: 20px;
 
-  .logo {
-    color: $primary-color-900;
+  section {
+    padding-inline: 40px;
   }
 
-  h1 {
-    color: $primary-color-900;
-    font-size: 2rem;
-    text-align: center;
-  }
+  #hero {
+    h1 {
+      color: $primary-color-900;
+      font-size: 2rem;
+      text-align: center;
+    }
 
-  p {
-    color: $primary-color-900;
-    font-size: 1rem;
-    text-align: center;
-    margin-bottom: 60px;
+    p {
+      color: $primary-color-900;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 
   #main-nav {
@@ -29,6 +31,95 @@
   #import-tourney {
     margin-top: 30px;
   }
+
+  #how-it-works {
+    padding-bottom: 60px;
+    margin-top: 60px;
+    background: linear-gradient(to bottom, $white, $primary-color-200);
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      background: linear-gradient(to right, $secondary-color-400, $secondary-color-700);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .section-description {
+      font-size: 1.2rem;
+      color: #6c757d;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .steps-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .step-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      background-color: $white;
+      border-radius: 12px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom right, $secondary-color-400, $secondary-color-700);
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    .step-number span {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .step-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: $secondary-color-700;
+    }
+
+    .step-description {
+      color: $secondary-color-800;
+      line-height: 1.6;
+    }
+  }
 }
 
 @media (width > 768px) {
@@ -36,12 +127,23 @@
     #main-nav {
       grid-template-columns: 1fr 1fr;
     }
+
+    #how-it-works {
+      padding-bottom: 100px;
+      margin-top: 100px;
+
+      .steps-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   }
 }
 
 @media (width > 1024px) {
   :host {
-    padding: 40px 80px;
+    section {
+      padding-inline: 80px;
+    }
 
     #import-tourney {
       padding-inline: 30%;
